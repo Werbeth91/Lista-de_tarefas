@@ -8,14 +8,34 @@
     <title>Lista de Tarefas</title>
   </head>
   <body>
-    <section class="container">
-      <h1>Lista de Tarefas</h1>
-      <div class="lista-tarefas">
-        <input type="text" class="input-nova-tarefa" />
-        <button class="add-tarefa">Adicionar Tarefa</button>
+    <section class="container-tasks-list">
+      <h1 class="title-tasks-list">Lista de Tarefas</h1>
+      <div class="topo-tasks-list">
+        <input
+          type="text"
+          class="input-new-task"
+          placeholder="Digite uma nova tarefa"
+        />
+        <button class="add-new-task">
+          <i class="fa-solid fa-plus"></i>
+        </button>
       </div>
-      <ul class="novas-tarefas"></ul>
+      <ul class="tasks-list">
+        <li><spam class="text-task">Tarefa 1</spam></li>
+      </ul>
+      <div class="icons-tasks-list">
+        <button>
+          <i class="fa-solid fa-pencil"></i>
+        </button>
+        <button>
+          <i class="fa-solid fa-trash"></i>
+        </button>
+      </div>
     </section>
+    <script
+      src="https://kit.fontawesome.com/f61857222e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./assents/Js/app.js"></script>
   </body>
 </html>
