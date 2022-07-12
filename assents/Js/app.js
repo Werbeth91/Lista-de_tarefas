@@ -2,22 +2,35 @@ const inputNewTask = document.querySelector(".input-new-task");
 const btnNewTask = document.querySelector(".add-new-task");
 const tasksList = document.querySelector(".tasks-list");
 
+const $html = document.querySelector("html");
+const btnDarkMode = document.querySelector(".dark-mode");
+
+btnDarkMode.addEventListener("click", () => {
+  $html.classList.toggle("dark-mode");
+});
+
 inputNewTask.addEventListener("keypress", (e) => {
-  if (e.keyCode == 13) {
+  if (e.keyCode == 13 && inputNewTask.value !== "") {
     let task = {
       nome: inputNewTask.value,
       id: generateId(),
     };
     addTask(task);
+  } else {
+    return;
   }
 });
 
 btnNewTask.addEventListener("click", (e) => {
-  let task = {
-    nome: inputNewTask.value,
-    id: generateId(),
-  };
-  addTask(task);
+  if (inputNewTask.value !== "") {
+    let task = {
+      nome: inputNewTask.value,
+      id: generateId(),
+    };
+    addTask(task);
+  } else {
+    return;
+  }
 });
 
 function generateId() {
