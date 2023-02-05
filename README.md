@@ -13,9 +13,3 @@ no canto superior direito da tela
   <img align="center" alt="JavaScript" width="50" heigth="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
 <div/>
 
-## Maneiras de utilizar, testar ou vizualizar
-
-
-Modo 1: Voçê pode copiar o código e rodar diretamente no seu navegador
-
-Modo 2: Basta clicar no Link [Lista de Tarefas](https://werbeth91.github.io/Lista-de-tarefas/)
